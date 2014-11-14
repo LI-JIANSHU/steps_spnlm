@@ -9,4 +9,4 @@ Usage:
 `git clone https://github.com/LI-JIANSHU/steps_spnlm.git`
 * Make a soft link to the run_spnlm.sh file in the same directory of run.sh: 
 `ln -s steps_spnlm/run_spnlm.sh run_spnlm.sh` 
-* Run the script from the directory containing thr run.sh
+* Run the script from the directory containing the run.sh
