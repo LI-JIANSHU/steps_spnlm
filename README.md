@@ -6,5 +6,7 @@ Prerequisite:
 
 Usage:
 * Download the script to the directory containing run.sh of SWBD: 
-* Make a soft link to the run_spnlm.sh file in the same directory of run.sh: ln -s steps_spnlm/run_spnlm.sh run_spnlm.sh. 
-* Run the script 
+`git clone https://github.com/LI-JIANSHU/steps_spnlm.git`
+* Make a soft link to the run_spnlm.sh file in the same directory of run.sh: 
+`ln -s steps_spnlm/run_spnlm.sh run_spnlm.sh` 
+* Run the script from the directory containing thr run.sh
