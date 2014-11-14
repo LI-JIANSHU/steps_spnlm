@@ -33,12 +33,9 @@ dir=data/local/lm
 cp $new_arpa $dir/
 
 LM=data/local/lm/${base_name}.arpa.gz
-spnlm_step/format_lm_spn.sh data/lang $LM data/local/dict/lexicon.txt data/lang_${base_name}
-
-
+steps_spnlm/format_lm_spn.sh data/lang $LM data/local/dict/lexicon.txt data/lang_${base_name}
 
 decoding_list="${base_name}"
-
 
 for lm_suffix in $decoding_list; do
   (
