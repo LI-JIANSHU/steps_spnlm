@@ -16,7 +16,7 @@ Usage:
 ---
 Tricks when running SWBD run.sh:
 
-Kaldi's run.sh script is well paralleled. This could save the time to run the script, but also it will increase the work load tremendously. If the code is to be ran locally, the local machine may not handle such amount of work load parallelized by Kaldi. Even some sever with more CPU and memory researches would become irresponsive when running the code as it is. 
+Kaldi's run.sh script is well paralleled. This could save the time to run the script, but also it will increase the work load tremendously. If the code is to be ran locally, the local machine may not handle such amount of work load parallelized by Kaldi. Even some sever with more CPU and memory resources would become irresponsive when running the code as it is. 
 
 There are two level of parallelism. For running the script locally, the first one is using the `run.pl` script to split one task into several parallel tasks. The `run.pl` script is a general purpose script to run any parallelizable task. One just need to specify the command, inputs, outputs and number of jobs (through `-nj` option) to the it. The second one is using the command `&` to run a chunk of scripts in the background, when the outputs from that chunk doesn't affects the scripts after it. There are quite a lot of this background running when decoding for various language models, as their results are independent. 
 
