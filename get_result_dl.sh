@@ -2,7 +2,7 @@ lm_list=`cat lm_decode_list`
 
 query_list="eval2000.ctm.filt.dtl eval2000.ctm.swbd.filt.dtl eval2000.ctm.callhm.filt.dtl"
 dir_list="exp/tri4a exp_deeplearn/spn_tri4a_110h"
-dir_names="Kaldi SPN-CNN"
+dir_names="Kaldi SPN-AM"
 #dir_list="exp/tri4a exp_deeplearn/spn_tri4a"
 
 for query_file in $query_list; do 
